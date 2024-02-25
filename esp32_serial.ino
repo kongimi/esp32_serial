@@ -8,7 +8,7 @@
  */
 #define RXD2 16
 #define TXD2 17
-
+/* test git*/
 int incomingByte = 0; // for incoming serial data
 String string_read;
 int i;
