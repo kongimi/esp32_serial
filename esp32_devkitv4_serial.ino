@@ -22,8 +22,6 @@ void setup() {
   Serial.begin(9600, SERIAL_8N1, RXD, TXD);
   SerialRS232_1.begin(9600, SERIAL_8N1, RXD1, TXD1);
   SerialRS232_2.begin(9600, SERIAL_8N1, RXD2, TXD2);
-//  Serial1.begin(9600, SERIAL_8N1, RXD1, TXD1);
-//  Serial2.begin(9600, SERIAL_8N1, RXD2, TXD2);
   i = 0;
 }
 
@@ -55,31 +53,4 @@ void loop() {
   SerialRS232_2.print(i);
   SerialRS232_2.print("\n");
   delay(1000);
-
-//  if(Serial1.available())
-//  {
-//    incomingByte = Serial1.read();
-//    Serial1.print("*** Receive data: ");
-//    Serial1.print(incomingByte);
-//    Serial1.print("\n");
-//  }
-//  i++;
-//  Serial1.print("*** Sent Value: ");
-//  Serial1.print(i);
-//  Serial1.print("\n");
-//  delay(1000);
-  
-//  if(Serial2.available())
-//  {
-//    incomingByte = Serial2.read();
-//    Serial2.print("*** Serial2 data: ");
-//    Serial2.print(incomingByte);
-//    Serial2.print("\n");
-//  }
-//  i++;
-//  Serial2.print("*** Sent Value: ");
-//  Serial2.print(i);
-//  Serial2.print("\n");
-//  delay(1000);
-  
 }
